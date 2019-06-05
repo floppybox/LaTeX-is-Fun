@@ -1,0 +1,393 @@
+\documentclass[11pt,a4paper,addpoints,color,answers]{exam}	%	Package for typesetting exam scripts 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Anpassungen für exam %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{anyfontsize}
+\usepackage{color}							% Colour control for LATEX documents
+%\shadedsolutions
+\renewcommand{\solutiontitle}{\noindent}
+\SolutionEmphasis{\color{blue}}
+\colorgrids
+\definecolor{GridColor}{gray}{0.8}
+\setlength{\gridsize}{5.03mm}
+\setlength{\gridlinewidth}{0.3mm}
+\setlength\dottedlinefillheight{5mm}
+\colorfillwithdottedlines
+\definecolor{FillWithDottedLinesColor}{gray}{0.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Anpassungen für exam %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%% \usepackage %%%%%
+	%\usepackage{ae}                   			% Virtual fonts for T1 encoded CMR-fonts
+	\usepackage{amsmath}						% AMS mathematical facilities for LATEX
+	\usepackage{amsfonts}						% TEX fonts from the American Mathematical Society
+	\usepackage{amssymb}						% z. B. für \leqq
+	%\usepackage{bbm}                  			% "Blackboard-style" cm fonts
+	\usepackage{courier}						% Adobe Type 1 "free" copies of Courier
+	\usepackage{hyperref}						% Extensive support for hypertext in LATEX
+		\hypersetup{
+			colorlinks	= true,
+			linkcolor 	= black,
+			urlcolor	= blue		
+		}
+	\usepackage[hyphenbreaks]{breakurl}			% Line-breakable \url-like links in hyperref when compiling via dvips/ps2pdf
+	\usepackage[europeanresistors,americanvoltages,emptydiodes,siunitx]{circuitikz}		
+												% Draw electrical networks with TikZ
+	\usepackage[dvips]{epsfig}					% Include Encapsulated PostScript in LATEX documents
+	\usepackage[left]{eurosym}    				% METAFONT and macros for Euro sign
+	\usepackage{listings}						% Typeset source code listings using LATEX
+		\lstset{literate=						% darstellen von Umlauten mit dem Paket listings
+			{Ö}{{\"O}}1
+			{Ä}{{\"A}}1
+			{Ü}{{\"U}}1
+			{ß}{{\ss}}1
+			{ü}{{\"u}}1
+			{ä}{{\"a}}1
+			{ö}{{\"o}}1
+		}
+		\lstdefinestyle{DOS}
+		{	
+			backgroundcolor=\color{black},		% choose the background color
+			basicstyle=\linespread{1.5}\scriptsize\color{white}\ttfamily,
+			numbers=left,					% where to put the line-numbers
+			numberstyle=\color{red},
+			stepnumber=1,
+			showspaces=false,
+			tabsize=1,
+			breaklines=true,
+			breakatwhitespace=true,
+			columns=fullflexible				% to avoid spaces between letters
+		}
+		\lstdefinestyle{DOS2}
+		{	
+			backgroundcolor=\color{white},		% choose the background color
+			basicstyle=\linespread{1}\tiny\color{black}\ttfamily,
+			numbers=left,					% where to put the line-numbers
+			numberstyle=\color{red},
+			stepnumber=1,
+			showspaces=false,
+			tabsize=1,
+			breaklines=true,
+			breakatwhitespace=true%,
+%			columns=fullflexible				% to avoid spaces between letters
+		}
+
+	\usepackage{dsfont}							% Type­set math­e­mat­i­cal dou­ble stroke sym­bols
+	\usepackage{natbib}
+	\usepackage{graphicx}
+	
+	\usepackage{afterpage}
+	
+	\usepackage{epigraph}
+	\setlength\epigraphwidth{.8\textwidth}
+	\setlength\epigraphrule{0pt}
+	
+
+	%\usepackage{exscale}						% Implements scaling of the 'cmex' fonts
+	%\usepackage{fp}							% Fixed point arithmetic
+	\usepackage{float} 							% Improved interface for floating objects \begin{figure}[H]	Places the float at precisely the location in the LaTeX code.
+	\usepackage[T1]{fontenc}					% Standard package for selecting font encodings
+	\usepackage{german}							% Support for German typography
+	\usepackage{isotope}						% A package for typesetting isotopes
+	\usepackage[utf8]{inputenc}					% Accept different input encodings
+	%\usepackage{latexsym}             			% z. B. f\"{u}r den Befehl $\$\leadsto$$
+	\usepackage{makecell}						% Tabular column heads and multilined cells
+	\usepackage{mathtools}						% Mathematical tools to use with amsmath (\intertext{and}; \shortintertext{and})
+	\usepackage[version=4]{mhchem}				% Typeset chemical formulae/equations
+	%\usepackage{picins}						% Insert pictures into paragraphs
+	\usepackage{pst-all}
+	%\usepackage{pstricks}
+	%\usepackage{pstricks-add}
+	\usepackage{pst-circ}						% A PSTricks package for drawing electric circuits. Wird benötigt für \psgrid
+	%\usepackage[dvips]{rotating}				% Rotation tools, including rotated full-page floats
+
+	\usepackage{titlesec}
+	\newcommand{\sectionbreak}{\clearpage}
+
+	\usepackage{siunitx}						% A comprehensive (SI) units package
+		\sisetup{output-decimal-marker = {,}}	% Komma als Dezimaltrennzeichen für siunitx
+		\sisetup{exponent-product = \cdot}
+	\usepackage{tikz}							% Create PostScript and PDF graphics in TEX
+	\usepackage[europeanresistors,americanvoltages,emptydiodes,siunitx]{circuitikz}
+		\usetikzlibrary{circuits.ee.IEC}		% Schaltbilder mit TikZ
+		\usetikzlibrary{shapes,arrows,positioning,calc}
+		\usetikzlibrary{
+			circuits.logic.US,
+			circuits.logic.IEC,
+			circuits.logic.CDH,
+			circuits.ee.IEC,
+		}
+		\usetikzlibrary{decorations.markings}
+		\usetikzlibrary{arrows}
+		\usetikzlibrary{decorations.pathmorphing}
+		\usetikzlibrary{decorations.pathreplacing}			% für geschweifte Klammern
+		\usepackage{url}							% Verbatim with URL-sensitive line breaks
+		\usepackage{ulem}
+		
+%		\usepackage{version}						% Conditionally include text
+%			\includeversion{gitter}
+%			\excludeversion{gitter} 				% Auskommentieren, um die Gitter anzuzeigen
+%			\includeversion{loesung}
+	%\usepackage{yhmath}						% Extended maths fonts for LATEX
+%	\usepackage{verbatim}						% Reimplementation of and extensions to LATEX verbatim
+%%%%% \usepackage %%%%%
+
+%%%%% \definecolor %%%%%
+	\definecolor{dgreen}{rgb}{0,0.502,0}
+	\definecolor{lgreen}{rgb}{0.753,1,0.753}
+	\definecolor{lred}{rgb}{1,0.753,0.753}
+	\definecolor{lblue}{rgb}{0.9216,0.9216,1}
+	\definecolor{llblue}{rgb}{0.9608,0.9608,1}
+% 	\newrgbcolor{lmagenta}{1 0.502 1}
+%%%%% \definecolor %%%%%
+
+%%%%% \newcommand %%%%%
+	\newcommand{\aufgabe}{\vspace*{1ex}\stepcounter{aufg}\setcounter{enumi}{\value{aufg}}\setcounter{enumii}{0}\addtocounter{enumii}{-1}}
+	%\newcommand*{\bbm}[1]{$\mathbbm{#1}$}
+	%\newcommand*{\bbmi}[2]{$\mathbbm{#1}_#2$}
+	\newcommand{\bx}[1]{\fbox{\rule[-0.5ex]{0ex}{3ex} \hspace*{#1ex}}}
+	%\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+	%		\node[shape=circle,draw,inner sep=1.2pt] (char) {#1};}}
+	%\newcommand{\D}{\displaystyle}
+	\newcommand{\grid}[1]{\\[1ex]		
+		\smallskip
+		\psset{unit=0.5cm}\hfill
+		\begin{pspicture}(32,#1)
+		\psgrid[griddots=10,gridwidth=0.2pt,gridlabels=0pt,%
+		subgriddiv=0,subgriddots=10,gridcolor=black](0,0)(0,0)(32,#1)
+		\end{pspicture}}
+	%\newcommand*{\ie}{i.\,e. }
+	%\newcommand*{\kmph}{$\frac{\mbox{km}}{\mbox{h}}$}
+	%\newcommand*{\kmps}{$\frac{\mbox{km}}{\mbox{s}}$}
+	\newcommand{\kosy}[5]{
+		\begin{center}
+			\begin{tikzpicture}[scale=1.0,samples=400]
+				
+				%% Größe des KOSYs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+				
+				\pgfmathsetmacro{\xmin}{#1}
+				\pgfmathsetmacro{\xmax}{#2}
+				\pgfmathsetmacro{\ymin}{#3}
+				\pgfmathsetmacro{\ymax}{#4}
+				
+				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+				
+				\pgfmathtruncatemacro{\xmintick}{\xmin}
+				\pgfmathtruncatemacro{\xmaxtick}{\xmax}
+				\pgfmathtruncatemacro{\ymintick}{\ymin}
+				\pgfmathtruncatemacro{\ymaxtick}{\ymax}
+				
+				\pgfmathtruncatemacro{\xmingrid}{\xmin-1}
+				\pgfmathtruncatemacro{\xmaxgrid}{\xmax+1}
+				\pgfmathtruncatemacro{\ymingrid}{\ymin-1}
+				\pgfmathtruncatemacro{\ymaxgrid}{\ymax+1}
+				
+				\pgfmathsetmacro{\xminkosy}{\xmin-0.5}
+				\pgfmathsetmacro{\xmaxkosy}{\xmax+0.5}
+				\pgfmathsetmacro{\yminkosy}{\ymin-0.5}
+				\pgfmathsetmacro{\ymaxkosy}{\ymax+0.5}
+				
+				% Definition des Gitters und das Gitter selbst
+				
+				\tikzstyle{dotted}= [dash pattern=on 0.15mm off 0.85mm]
+				\draw[help lines,line width=0.15mm,step=0.5,style=dotted,black,line cap=round] (\xmingrid,\ymingrid) grid (\xmaxgrid,\ymaxgrid);
+				
+				% Ursprung
+				
+				\node[below left] (0,0) {O};
+				
+				% Beschriftung der Koordinatenachsen mit Ticks (muss vor den Achsen selbst kommen, sonst sind die Achsen z. T. abgedeckt)
+				
+				\foreach \x in {\xmintick,...,-1,1,2,...,\xmaxtick}
+				{
+					\draw node[anchor=north,fill=white, fill opacity=0.7] at (\x,0) {\x};
+					\draw (\x,0pt) -- (\x,-2pt) node[anchor=north] at (\x,0) {\x};
+				}		
+				
+				\foreach \y in {\ymintick,...,-1,1,2,...,\ymaxtick}
+				{
+					\draw node[anchor=east,fill=white, fill opacity=0.7] at (0,\y) {\y};
+					\draw (0pt,\y) -- (-2pt,\y) node[anchor=east] at (0,\y) {\y};
+				}
+				
+				% Koordinatenachsen und Beschriftung mit $x$ und $y$
+				
+				\draw[-latex,line width=0.2mm] (\xminkosy,0) --(\xmaxkosy,0) node[below]{$x$};   
+				\draw[-latex,line width=0.2mm] (0,\yminkosy) --(0,\ymaxkosy) node[left]{$y$};
+				
+				\draw[line width=1pt,domain=0:#2+0.5] plot (\x,{#5});
+				\draw[color=magenta,line width=1pt,->] (0,3.5) -- (1.693,3.5);
+				\draw[color=magenta,line width=1pt,->] (1.693,3.5) -- (1.693,0);
+				\draw node[anchor=west,fill=white, fill opacity=0.7] at (1.8,1) {$\textcolor{red}{\checkmark}$zu 3.5};				
+				\draw node[anchor=west,fill=white, fill opacity=0.7] at (1,5) {$\textcolor{red}{\checkmark}\textcolor{red}{\checkmark}$};
+				
+			\end{tikzpicture}
+		\end{center}
+	}	
+	%\newcommand*{\linie}{
+	%	
+	%	\vspace*{1ex}
+	%	
+	%	\hrulefill}
+	%\newcommand*{\mmpd}{$\frac{\mbox{mm}}{\mbox{d}}$}
+	%\newcommand*{\mph}{$\frac{\mbox{m}}{\mbox{h}}$}
+	%\newcommand*{\mps}{$\frac{\mbox{m}}{\mbox{s}}$}
+	%\newcommand*{\ph}{ & \quad \fbox{\rule[-0ex]{0ex}{2ex} \hspace*{1.5ex}} \quad }
+	\newcommand{\pu}{\marginpar{(\hspace{3.25ex}/\hspace{3ex})}}
+	\newcommand{\pun}[1]{   \marginpar{\mbox{(\hspace{3.25ex}|\;\,\sffamily#1\;\,)}}
+		\addtocounter{punkte}{#1}}
+	\newcommand{\redcheck}{\ensuremath{\textcolor{red}{\checkmark}}}
+%	\newcommand{\redcheckm}{\textcolor{red}{\checkmark}}
+	\newcommand{\rueckseite}{
+		\vfill
+		
+		\begin{flushright}
+			Auf der Rückseite geht es weiter!
+		\end{flushright}
+		
+		\newpage
+		\thispagestyle{empty} \vspace*{-2em}}
+	\newcommand{\naechsteseite}{
+	\vfill
+	
+	\begin{flushright}
+		Auf der nächsten Seite geht es weiter!
+	\end{flushright}
+	
+	\newpage
+	\thispagestyle{empty} \vspace*{-2em}}
+	%\newcommand{\shortgrid}[3]{
+	%	
+	%	\smallskip
+	%	\psset{unit=0.5cm}\hfill
+	%	\begin{pspicture}(#2,#1)
+	%	\psgrid[griddots=10,gridwidth=0.2pt,gridlabels=0pt,%
+	%	subgriddiv=0,subgriddots=10,gridcolor=black](0,0)(0,0)(#3,#1)
+	%	\end{pspicture}}
+	\newcommand*{\zb}{z.\,B. }
+	
+	% https://tex.stackexchange.com/questions/78929/underlining-an-equation-in-an-align-block
+	
+	\makeatletter
+	\tikzset{%
+		remember picture with id/.style={%
+			remember picture,
+			overlay,
+			save picture id=#1,
+		},
+		save picture id/.code={%
+			\edef\pgf@temp{#1}%
+			\immediate\write\pgfutil@auxout{%
+				\noexpand\savepointas{\pgf@temp}{\pgfpictureid}}%
+		},
+		if picture id/.code args={#1#2#3}{%
+			\@ifundefined{save@pt@#1}{%
+				\pgfkeysalso{#3}%
+			}{
+				\pgfkeysalso{#2}%
+			}
+		}
+	}
+	
+	\def\savepointas#1#2{%
+		\expandafter\gdef\csname save@pt@#1\endcsname{#2}%
+	}
+	
+	\def\tmk@labeldef#1,#2\@nil{%
+		\def\tmk@label{#1}%
+		\def\tmk@def{#2}%
+	}
+	
+	\tikzdeclarecoordinatesystem{pic}{%
+		\pgfutil@in@,{#1}%
+		\ifpgfutil@in@%
+		\tmk@labeldef#1\@nil
+		\else
+		\tmk@labeldef#1,(0pt,0pt)\@nil
+		\fi
+		\@ifundefined{save@pt@\tmk@label}{%
+			\tikz@scan@one@point\pgfutil@firstofone\tmk@def
+		}{%
+			\pgfsys@getposition{\csname save@pt@\tmk@label\endcsname}\save@orig@pic%
+			\pgfsys@getposition{\pgfpictureid}\save@this@pic%
+			\pgf@process{\pgfpointorigin\save@this@pic}%
+			\pgf@xa=\pgf@x
+			\pgf@ya=\pgf@y
+			\pgf@process{\pgfpointorigin\save@orig@pic}%
+			\advance\pgf@x by -\pgf@xa
+			\advance\pgf@y by -\pgf@ya
+		}%
+	}
+	\makeatother
+	
+	\newcommand{\tikzmarkindouble}[2][]{%
+		\tikz[remember picture,overlay,baseline=1ex]
+		\draw[line width=0.5pt,#1,double]
+		(pic cs:#2) -- (0,0)
+		;}
+	
+	\newcommand{\tikzmarkin}[2][]{%
+		\tikz[remember picture,overlay,baseline=1ex]
+		\draw[line width=0.5pt,#1]
+		(pic cs:#2) -- (0,0)
+		;}
+	
+	\newcommand\tikzmarkend[2][]{%
+		\tikz[remember picture with id=#2,baseline=1ex] #1;}
+	
+%%%%% \newcommand %%%%%
+
+%%%%% \newcounter %%%%%
+	\newcounter{nullpunkte}
+	\newcounter{punkte}[nullpunkte]
+	\newcounter{aufg}\setcounter{aufg}{0}
+%%%%% \newcounter %%%%%
+
+%%%%% newenvironment %%%%%
+\newenvironment{flo}{\begin{list}{\addtocounter{enumi}{-1}\arabic{enumi}\hspace{1.8ex}}{\usecounter{enumi} \setlength{\labelsep}{4mm}\setlength{\leftmargin}{26pt}}{}{}}{\end{list}\vspace*{-0.75em}}
+\newenvironment{flo.}{\begin{list}{\arabic{enumi}.\arabic{enumii}}{\usecounter{enumii} \setlength{\labelsep}{4mm}\setlength{\leftmargin}{26pt}}{}{}}{\end{list}\vspace*{-0.75em}}
+%%%%% newenvironment %%%%%
+
+%%%%% newfont %%%%%
+	\newfont{\calligraphic}{callig15 scaled 1200}
+%%%%% newfont %%%%%
+
+%%%%% \renewcommand %%%%%
+	%\renewcommand*{\euro}{{}\,\officialeuro{}}
+	\renewcommand*{\dh}{d.\,h. }
+	\renewcommand{\questionshook}{%
+		\setlength{\labelsep}{4mm}%{20.5pt}
+		\setlength{\leftmargin}{26pt}
+	}
+	
+	\renewcommand{\partshook}{%
+		\setlength{\labelsep}{4mm}
+		\setlength{\leftmargin}{0pt}
+	}
+	
+	\renewcommand{\choiceshook}{%
+		\setlength{\labelsep}{20.5pt}
+		\setlength{\leftmargin}{26pt}
+	}
+%%%%% \renewcommand %%%%%
+
+
+%%%%% \setlength %%%%%
+	\setlength{\parindent}{0em}       % kein Erstzeileneinzug
+	\setlength{\textheight}{282mm} 
+	\setlength{\textwidth}{167mm}
+	\setlength{\oddsidemargin}{-13mm} 
+	\setlength{\topmargin}{-28mm}
+	\setlength{\marginparsep}{8mm}
+	\setlength{\rightpointsmargin}{3mm}
+%%%%% \setlength %%%%%
+
+%%%%% exam %%%%%
+\pointformat{\fontsize{10}{12}\selectfont (\quad\,\,\,|\,\,\,\textsf{\themarginpoints}\,\,\,)}
+%%%%% exam %%%%%
+
