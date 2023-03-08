@@ -1,0 +1,49 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage{tikz}
+	\usetikzlibrary{3d, angles, arrows, arrows.meta, babel, backgrounds, bending, calc, circuits.logic.US, decorations.markings, decorations.pathmorphing, decorations.pathreplacing, decorations.text, decorations, er, fit, graphs, intersections, matrix, mindmap, patterns, plotmarks, positioning, quotes, svg.path, shadows.blur, shapes.misc, tikzmark, trees, shapes, shadows, through, circuits.logic.US, circuits.logic.IEC, circuits.logic.CDH, circuits.ee.IEC}
+\usepackage{tkz-euclide}
+
+\usepackage{pgf}
+\usepgflibrary{decorations.text}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usepackage{siunitx}						        % A comprehensive (SI) units package
+	\sisetup{output-decimal-marker = {,}}	% Komma als Dezimaltrennzeichen für siunitx
+	\sisetup{exponent-product = \cdot}		% Punkt statt x zwischen Zahl und Zehnerpotenz
+	\sisetup{per-mode = fraction, fraction-function=\tfrac}			% Bruchstrich in Einheit
+	\sisetup{inter-unit-product = \cdot}
+	\sisetup{detect-weight=true, detect-family=true} 
+	\sisetup{detect-all=true}             % für fettes SI - Quelle: https://tex.stackexchange.com/questions/610211/how-to-have-bold-unit-with-siunitx
+
+\begin{document}
+
+\tikzset{
+	basic/.style  = 	{draw, font=\sffamily, rectangle},
+	root/.style   = 	{basic, text width=4cm, rounded corners=2pt, thick, align=center, fill=white!30, minimum height=1cm},
+	level 1/.style = 	{basic, text width=4.5cm, rounded corners=2pt, thick, align=center, fill=white!60, minimum height=1cm, sibling distance = 5.5cm}
+}
+
+\begin{center}
+	\begin{tikzpicture}
+	[
+	%edge from parent fork down,
+	edge from parent/.style={-&gt;,draw, very thick},
+	&gt;=latex,
+	level distance=1cm,
+	growth parent anchor={south}, 
+	nodes={anchor=north}
+	]
+	
+	\node[root] {Arten von Stößen}
+	child	{node[level 1] {elastischer Stoß}
+	}
+	child 	{node[level 1] {teilelastischer Stoß}
+	}
+	child 	{node[level 1] {inelastischer Stoß}
+	}
+	;
+	
+	\end{tikzpicture}
+\end{center}
+\end{document}
