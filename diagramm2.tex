@@ -1,0 +1,36 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage{tikz}
+	\usetikzlibrary{3d, angles, arrows, arrows.meta, babel, backgrounds, bending, calc, circuits.logic.US, decorations.markings, decorations.pathmorphing, decorations.pathreplacing, decorations.text, decorations, er, fit, graphs, intersections, matrix, mindmap, patterns, plotmarks, positioning, quotes, svg.path, shadows.blur, shapes.misc, tikzmark, trees, shapes, shadows, through, circuits.logic.US, circuits.logic.IEC, circuits.logic.CDH, circuits.ee.IEC}
+\usepackage{tkz-euclide}
+
+\usepackage{pgf}
+    \usepgflibrary{decorations.text}
+\usepackage{pgfplots}
+    \pgfplotsset{compat=newest}
+
+\begin{document}
+
+\tikzset{
+    basic/.style  =     {draw, font=\sffamily, rectangle},
+    root/.style   =     {basic, text width=4cm, rounded corners=2pt, thick, align=center, fill=white!30, minimum height=1cm},
+    level 1/.style =    {basic, text width=6cm, rounded corners=2pt, thick, align=center, fill=white!60, minimum height=1.5cm, sibling distance = 7cm},
+    level 2/.style =    {basic, text width=5cm, rounded corners=2pt, thick, align=center, fill=white!60, minimum height=1.5cm, sibling distance = 6cm},
+}
+ 
+\begin{tikzpicture}
+[
+%edge from parent fork down,
+edge from parent/.style={-latex,draw, very thick},
+level distance=0.75cm,
+growth parent anchor={south}, 
+nodes={anchor=north}
+]
+ 
+\node[root] {Arten der Bewegung}
+    child   {node[level 1] {unbeschleunigt ("`gleichförmig"') \\ z.\,B. ruhig fliegendes Flugzeug}}
+    child   {node[level 1] {beschleunigt ("'ungleichförmig"')}
+        child {node[level 2] {gleichmäßig beschleunigt\\ z.\,B. freier Fall}}
+        child {node[level 2] {ungleichmäßig beschleunigt \\ z.\,B. Fahrt im Straßenverkehr}}
+            };
+\end{tikzpicture}
+\end{document}
