@@ -48,28 +48,22 @@
 
 %%%% Winkel mit Pfeil markieren und anschließend beschriften 
 %\tkzMarkRightAngle[-&gt;, color=magenta, size=.75, draw, thick, german](S1,A,C)
-\tkzFindAngle(B,A,C)   \tkzGetAngle{winkelalpha}	
-\radier{
-	\tkzMarkAngle[-&gt;, color = magenta, size = 2.2, draw,  thick, &gt;=latex](B,A,C)
+\tkzFindAngle(B,A,C)   \tkzGetAngle{winkelalpha}
+\tkzMarkAngle[-latex, color = magenta, size = 2.2, draw,  thick](B,A,C)
 	\tkzLabelAngle[color = magenta, pos=1.5](B,A,C){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
-}
 
-\tkzFindAngle(C,B,A)   \tkzGetAngle{winkelbeta}	
-\radier{
-	\tkzMarkAngle[-&gt;, color = magenta, size = 1.8, draw,  thick](C,B,A)
+\tkzFindAngle(C,B,A)   \tkzGetAngle{winkelbeta}
+\tkzMarkAngle[-latex, color = magenta, size = 1.8, draw,  thick](C,B,A)
 	\tkzLabelAngle[color = magenta, pos=1.2](C,B,A){$ \pgfmathprintnumber{\winkelbeta}\si{\degree}$}
-}
 
 \tkzFindAngle(A,C,B)   \tkzGetAngle{winkelgamma}	
-\radier{
-	\tkzMarkAngle[-&gt;, color = magenta, size = 1.3, draw,  thick](A,C,B)
+\tkzMarkAngle[-latex, color = magenta, size = 1.3, draw,  thick](A,C,B)
 	\tkzLabelAngle[color = magenta, pos=0.8](A,C,B){$ \pgfmathprintnumber{\winkelgamma}\si{\degree}$}
-}
 
 %%% Zeichnen von Punkten	
 \tkzDrawPoint(A)	\tkzLabelPoint[below left = 1ex, color = black](A){D} 
 \tkzDrawPoint(B)	\tkzLabelPoint[below right = 1ex, color = black](B){E} 
-\tkzDrawPoint(C)	\tkzLabelPoint[above = 1ex, color = black](C){\;\;\;F\redcheck} 
+\tkzDrawPoint(C)	\tkzLabelPoint[above = 1ex, color = black](C){\;\;\;F} 
 
 %%% Berechnen von Streckenlängen
 \tkzCalcLength(A,B)	\tkzGetLength{rAB}	
@@ -81,10 +75,10 @@
 \tkzLabelSegment[below = 1ex, color = blue, sloped](A,B){$f=\SI{\rAB}{\centi \meter}$}
 
 \tkzDrawSegment[line cap=round](B,C)	
-\tkzLabelSegment[above = 1ex, color = blue, sloped](B,C){$d=\SI{\rBC}{\centi \meter}$\redcheck}
+\tkzLabelSegment[above = 1ex, color = blue, sloped](B,C){$d=\SI{\rBC}{\centi \meter}$}
 
 \tkzDrawSegment[line cap=round](A,C)	
-\tkzLabelSegment[above = 1ex, color = blue, sloped](A,C){$e=\SI{\rAC}{\centi \meter}$\redcheck}
+\tkzLabelSegment[above = 1ex, color = blue, sloped](A,C){$e=\SI{\rAC}{\centi \meter}$}
 
 %%% Zeichnen des Thaleskreises
 \tkzDefMidPoint(A,B) 	\tkzGetPoint{M}		\tkzDrawPoints[color=blue](M)	\tkzLabelPoint[above=1ex, color=blue](M){M}
@@ -94,7 +88,7 @@ postaction={decoration = {
 		raise=0.5ex ,
 		text along path ,
 		text color=blue ,
-		text={Thaleskreis{\redcheck}} ,
+		text={Thaleskreis} ,
 		text align={left indent=190mm}} , decorate}](M,A)
 \end{tikzpicture}
 \end{document}
