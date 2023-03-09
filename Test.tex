@@ -4,6 +4,8 @@
 
 \usepackage{tikz}
 \usepackage{tkz-euclide}
+\usetkzobj{all}
+
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
   \usetikzlibrary{decorations.markings,positioning,shapes.geometric}
@@ -13,7 +15,7 @@
 %%% Definitionen der Styles
 \tkzSetUpColors[background = white, text = black] 
 \tkzSetUpPoint[size = 2.5pt, color = black, fill = blue!50]
-\tkzSetUpLine[line width = 1pt, color = black] 
+\tkzSetUpLine[line width = 1pt, color = black, line cap = round] 
 %\tkzSetUpCompass[color = gray, line width =.4 pt, delta = 15]
 %\tkzSetUpArc[color = gray, line width = .4pt] 
 %\tkzSetUpStyle[orange]{new}
