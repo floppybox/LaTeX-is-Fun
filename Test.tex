@@ -4,53 +4,5 @@
 \usepackage{tikz}
 
 \begin{document}
-
-\tikzset{every node/.style={font=\Large},
-	myarrow1/.style = {-latex, thick, line width = 4pt, magenta},
-	myarrow2/.style = {-latex, thick, line width = 3pt, blue}
-}%\tikzset
-
-\begin{tikzpicture}[scale=1, color = black, label distance = 5mm
-	%	, show background grid
-	]%tikzpicture
 	
-	% \draw (0,-2) to[labeled grid] (15,6);
-	
-	% x^2 und bx
-	\draw[very thick] (0,0)  -- +(2,0) -- +(2,2) -- node[above = 0.5ex] {$x$} +(0,2) -- node[left = 0.5ex] {$x$} cycle;	% relative Koordinaten zum Ausgangspunkt
-	\draw[very thick] (3,0)  -- ++(1,0) -- ++(0,2) -- node[above = 0.5ex] {$b$} ++(-1,0) -- cycle;						% zum Vergleich: jeweils realtiv zum Punkt davor
-	
-	\node[red] at (1,1) {$x^2$};
-	\path  (3,0) +(0.5,1) node[red] {$bx$};	% zum Verleich mit \path
-	\node[red] at (2.5,1) {$+$};
-	
-	% Pfeil
-	% \draw[-{Triangle[width=8pt,length=8pt]}, line width=5pt](4.25,1) -- +(1,0); 									% alternative Pfeilspitze
-	\draw[myarrow1] (4.25,1) -- +(1,0);
-	
-	% x^2 
-	\draw[very thick] (6,0)  -- +(2,0) -- +(2,2) -- node[above = 0.5ex] {$x$} +(0,2) -- node[left = 0.5ex] {$x$} cycle;	
-	
-	% bx/2 rechts und bx/2 rechts gepunkted
-	\draw[very thick] (8.5,0)  -- +(0.5,0) -- +(0.5,2) -- node[above = 0.5ex] {$\frac{b}{2}$} +(0,2) -- cycle;	
-	\draw[very thick, densely dotted] (9,0) -- +(0.5,0) -- +(0.5,2) -- +(0,2) -- cycle;	
-	
-	% Pfeil gebogen
-	\draw[myarrow2, bend left=30] (9.25,-0.1) to +(-1.1,-0.65);
-	
-	% bx/2 unten
-	\draw[very thick] (6,-1)  -- +(2,0) -- +(2,0.5) -- +(0,0.5) -- node[left = 0.5ex] {$\frac{b}{2}$} cycle;	
-	
-	% Pfeil
-	\draw[myarrow1] (9.75,1) -- +(1,0);
-	
-	% einzelne Linien (vor dem Polygon, damit überdeckt)
-	\draw[very thick, white!80!black] (12.25,0)  -- +(2,0) -- +(2,2);	
-	
-	% Polygon 
-	\draw[very thick] (12.25,-0.5)  -- +(2,0) -- +(2,0.5) -- +(2.5,0.5) -- +(2.5,2.5) -- node[above = 0.5ex] {$x+\frac{b}{2}$} +(0,2.5) -- node[left = 0.5ex] {$x+\frac{b}{2}$} cycle;	
-	
-	% (b/2)^2 in rot
-	\draw[very thick, fill = red!100] (14.45,-0.7)  -- +(0.5,0) -- node[right = 0.5ex, red] {$\left(\frac{b}{2}\right)^2$} +(0.5,0.5) -- +(0,0.5) -- cycle;	
-\end{tikzpicture}
 \end{document}
