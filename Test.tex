@@ -1,98 +1,56 @@
 \documentclass[tikz, border=10pt]{standalone}
 \usepackage[utf8]{inputenc} 
 \usepackage[ngerman]{babel}
-
 \usepackage{tikz}
-%   \usetikzlibrary{3d, angles, arrows, arrows.meta, babel, backgrounds, bending, calc, circuits.logic.US, decorations.markings, decorations.pathmorphing, decorations.pathreplacing, decorations.text, decorations, er, fit, graphs, intersections, matrix, mindmap, patterns, plotmarks, positioning, quotes, svg.path, shadows.blur, shapes.misc, tikzmark, trees, shapes, shadows, through, circuits.logic.US, circuits.logic.IEC, circuits.logic.CDH, circuits.ee.IEC}
-\usepackage{tkz-euclide}
-
-\usepackage{pgf}
-	\usepgflibrary{decorations.text}
-\usepackage{pgfplots}
-	\pgfplotsset{compat=newest}
-
-%\usepackage{siunitx}						        % A comprehensive (SI) units package
-	\sisetup{output-decimal-marker = {,}}	% Komma als Dezimaltrennzeichen für siunitx
-	\sisetup{exponent-product = \cdot}		% Punkt statt x zwischen Zahl und Zehnerpotenz
-	\sisetup{per-mode = fraction, fraction-function=\tfrac}			% Bruchstrich in Einheit
-	\sisetup{inter-unit-product = \cdot}
-	\sisetup{detect-weight=true, detect-family=true} 
-	\sisetup{detect-all=true}             % für fettes SI - Quelle: https://tex.stackexchange.com/questions/610211/how-to-have-bold-unit-with-siunitx
 
 \begin{document}
 
-\begin{tikzpicture}%[show background grid]
+\tikzset{every node/.style={font=\Large},
+	myarrow1/.style = {-latex, thick, line width = 4pt, magenta},
+	myarrow2/.style = {-latex, thick, line width = 3pt, blue}
+}%\tikzset
 
-%%% Definitionen der Styles
-%\tkzSetUpColors[background = white, text = black] 
-%\tkzSetUpPoint[size = 2.5pt, color = black, fill = blue!50] % war size=2.5pt
-%\tkzSetUpLine[line width = 1pt, color = black, line cap = round] 
-%\tkzSetUpCompass[color = gray, line width =.4 pt, delta = 15]
-%\tkzSetUpArc[color = gray, line width = .4pt] 
-%\tkzSetUpStyle[orange]{new}
-
-%%% Definition der BoundingBox x=11 y=7
-%\useasboundingbox (-2,-1) rectangle (13,6.5);
-
-%%% Beschnitt auf die BoundingBox
-%\tkzClipBB
-
-%%% Definition von Punkten
-\tkzDefPoint(0.5,0){A}	
-\tkzDefPoint(10.5,0){B}
-
-%%% Schneiden zweier Kreise
-\tkzInterCC[R](A,8)(B,6) \tkzGetFirstPoint{C}
-
-%%% Zeichnen von Kreisen
-\tkzCompass(A,C)
-\tkzCompass(B,C)
-
-%%%% Winkel mit Pfeil markieren und anschließend beschriften 
-%\tkzMarkRightAngle[-latex, color=magenta, size=.75, draw, thick, german](S1,A,C)
-\tkzFindAngle(B,A,C)   \tkzGetAngle{winkelalpha}
-\tkzMarkAngle[-latex, color = magenta, size = 2.2, draw,  thick](B,A,C)
-	\tkzLabelAngle[color = magenta, pos=1.5](B,A,C){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
-
-\tkzFindAngle(C,B,A)   \tkzGetAngle{winkelbeta}
-\tkzMarkAngle[-latex, color = magenta, size = 1.8, draw,  thick](C,B,A)
-	\tkzLabelAngle[color = magenta, pos=1.2](C,B,A){$ \pgfmathprintnumber{\winkelbeta}\si{\degree}$}
-
-\tkzFindAngle(A,C,B)   \tkzGetAngle{winkelgamma}	
-\tkzMarkAngle[-latex, color = magenta, size = 1.3, draw,  thick](A,C,B)
-	\tkzLabelAngle[color = magenta, pos=0.8](A,C,B){$ \pgfmathprintnumber{\winkelgamma}\si{\degree}$}
-
-%%% Zeichnen von Punkten	
-\tkzDrawPoint(A)	\tkzLabelPoint[below left = 1ex, color = black](A){D} 
-\tkzDrawPoint(B)	\tkzLabelPoint[below right = 1ex, color = black](B){E} 
-\tkzDrawPoint(C)	\tkzLabelPoint[above = 1ex, color = black](C){\;\;\;F} 
-
-%%% Berechnen von Streckenlängen
-\tkzCalcLength(A,B)	\tkzGetLength{rAB}	
-\tkzCalcLength(B,C)	\tkzGetLength{rBC}	
-\tkzCalcLength(A,C)	\tkzGetLength{rAC}	
-
-%%% Zeichnen von Strecken
-\tkzDrawSegment[line cap = round](A,B)	
-\tkzLabelSegment[below = 1ex, color = blue, sloped](A,B){$f=\SI{\rAB}{\centi \meter}$}
-
-\tkzDrawSegment[line cap=round](B,C)	
-\tkzLabelSegment[above = 1ex, color = blue, sloped](B,C){$d=\SI{\rBC}{\centi \meter}$}
-
-\tkzDrawSegment[line cap=round](A,C)	
-\tkzLabelSegment[above = 1ex, color = blue, sloped](A,C){$e=\SI{\rAC}{\centi \meter}$}
-
-%%% Zeichnen des Thaleskreises
-\tkzDefMidPoint(A,B) 	\tkzGetPoint{M}		\tkzDrawPoints[color=blue](M)	\tkzLabelPoint[above=1ex, color=blue](M){M}
-\tkzDrawCircle[color = gray, thin,
-    postaction={decoration = {
-		reverse path,,
-		raise=0.5ex ,
-		text along path ,
-		text color=blue ,
-		text={Thaleskreis} ,
-		text align={left indent=190mm}} , decorate
-    }
-](M,A)
+\begin{tikzpicture}[scale=1, color = black, label distance = 5mm
+	%	, show background grid
+	]%tikzpicture
+	
+	% \draw (0,-2) to[labeled grid] (15,6);
+	
+	% x^2 und bx
+	\draw[very thick] (0,0)  -- +(2,0) -- +(2,2) -- node[above = 0.5ex] {$x$} +(0,2) -- node[left = 0.5ex] {$x$} cycle;	% relative Koordinaten zum Ausgangspunkt
+	\draw[very thick] (3,0)  -- ++(1,0) -- ++(0,2) -- node[above = 0.5ex] {$b$} ++(-1,0) -- cycle;						% zum Vergleich: jeweils realtiv zum Punkt davor
+	
+	\node[red] at (1,1) {$x^2$};
+	\path  (3,0) +(0.5,1) node[red] {$bx$};	% zum Verleich mit \path
+	\node[red] at (2.5,1) {$+$};
+	
+	% Pfeil
+	% \draw[-{Triangle[width=8pt,length=8pt]}, line width=5pt](4.25,1) -- +(1,0); 									% alternative Pfeilspitze
+	\draw[myarrow1] (4.25,1) -- +(1,0);
+	
+	% x^2 
+	\draw[very thick] (6,0)  -- +(2,0) -- +(2,2) -- node[above = 0.5ex] {$x$} +(0,2) -- node[left = 0.5ex] {$x$} cycle;	
+	
+	% bx/2 rechts und bx/2 rechts gepunkted
+	\draw[very thick] (8.5,0)  -- +(0.5,0) -- +(0.5,2) -- node[above = 0.5ex] {$\frac{b}{2}$} +(0,2) -- cycle;	
+	\draw[very thick, densely dotted] (9,0) -- +(0.5,0) -- +(0.5,2) -- +(0,2) -- cycle;	
+	
+	% Pfeil gebogen
+	\draw[myarrow2, bend left=30] (9.25,-0.1) to +(-1.1,-0.65);
+	
+	% bx/2 unten
+	\draw[very thick] (6,-1)  -- +(2,0) -- +(2,0.5) -- +(0,0.5) -- node[left = 0.5ex] {$\frac{b}{2}$} cycle;	
+	
+	% Pfeil
+	\draw[myarrow1] (9.75,1) -- +(1,0);
+	
+	% einzelne Linien (vor dem Polygon, damit überdeckt)
+	\draw[very thick, white!80!black] (12.25,0)  -- +(2,0) -- +(2,2);	
+	
+	% Polygon 
+	\draw[very thick] (12.25,-0.5)  -- +(2,0) -- +(2,0.5) -- +(2.5,0.5) -- +(2.5,2.5) -- node[above = 0.5ex] {$x+\frac{b}{2}$} +(0,2.5) -- node[left = 0.5ex] {$x+\frac{b}{2}$} cycle;	
+	
+	% (b/2)^2 in rot
+	\draw[very thick, fill = red!100] (14.45,-0.7)  -- +(0.5,0) -- node[right = 0.5ex, red] {$\left(\frac{b}{2}\right)^2$} +(0.5,0.5) -- +(0,0.5) -- cycle;	
 \end{tikzpicture}
 \end{document}
