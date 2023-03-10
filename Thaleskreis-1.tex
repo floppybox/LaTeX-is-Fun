@@ -6,6 +6,15 @@
     \usetikzlibrary{3d, angles, arrows, arrows.meta, babel, backgrounds, bending, calc, circuits.logic.US, decorations.markings, decorations.pathmorphing, decorations.pathreplacing, decorations.text, decorations, er, fit, graphs, intersections, matrix, mindmap, patterns, plotmarks, positioning, quotes, svg.path, shadows.blur, shapes.misc, tikzmark, trees, shapes, shadows, through, circuits.logic.US, circuits.logic.IEC, circuits.logic.CDH, circuits.ee.IEC}
 \usepackage{tkz-euclide}
 
+% schöne Pfeilspitzen
+\tikzset{%
+	>=latex,
+	inner sep=0pt,%
+	outer sep=0pt,%         Das ist auch der Abstand zwischen Messgeräten und Leitungen!!!
+	mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+		fill=black,circle}%
+}
+
 \usepackage{pgf}
 	\usepgflibrary{decorations.text}
 \usepackage{pgfplots}
