@@ -1,0 +1,52 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel}
+
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+
+\usepackage{siunitx}				            % A comprehensive (SI) units package
+	\sisetup{output-decimal-marker = {,}}	% Komma als Dezimaltrennzeichen für siunitx
+	\sisetup{exponent-product = \cdot}		% Punkt statt x zwischen Zahl und Zehnerpotenz
+	\sisetup{per-mode = fraction, fraction-function=\tfrac}			% Bruchstrich in Einheit
+	\sisetup{inter-unit-product = \cdot}
+	\sisetup{detect-weight=true, detect-family=true} 
+	\sisetup{detect-all=true}             % für fettes SI - Quelle: https://tex.stackexchange.com/questions/610211/how-to-have-bold-unit-with-siunitx
+
+\begin{document}
+\begin{tikzpicture}%[show background grid]
+    %		\pgfkeys{/pgf/number format/.cd,fixed relative,precision=2}
+    
+    %%% Definitionen der Styles
+    \tkzSetUpColors[background=white, text=black] 
+    \tkzSetUpPoint[size=2.5, color=blue, fill=blue!50] 
+    \tkzSetUpLine[line width=1pt, color=black, line cap=round] 
+    \tkzSetUpCompass[color=gray, line width=.5 pt, delta=15]
+    \tkzSetUpArc[color=gray, line width=.4pt] 
+    \tkzSetUpStyle[orange]{new}
+        
+    \useasboundingbox (-2,-1) rectangle (9,4);
+    \tkzClipBB
+    
+    \tkzDefPoint(0,0){X}	\tkzDrawPoints[color=blue](X)	\tkzLabelPoint[below left=1ex, color=blue](X){X}
+    \tkzDefPoint(7,0){Y}	\tkzDrawPoints[color=blue](Y)	\tkzLabelPoint[below right=1ex, color=blue](Y){Y}
+    
+    \tkzCalcLength(X,Y)		\tkzGetLength{XY}
+    \tkzDrawSegments[color=blue](X,Y)	\tkzLabelSegment[sloped, below=0.5ex, color=blue](X,Y){$z=\pgfmathprintnumber{\XY}\,\si{\centi \meter}$}
+    
+    \tkzDefPointOnCircle[R = angle 35 center X radius 6]	
+    \tkzGetPoint{Z}	\tkzDrawPoints[color=blue](Z)	\tkzLabelPoint[above=0.5ex, color=blue](Z){Z}
+    
+    \tkzCalcLength(X,Z)	\tkzGetLength{XZ}
+    \tkzDrawSegment[color=blue](X,Z)	\tkzLabelSegment[sloped, above=0.5ex, color=blue](X,Z){$y=\pgfmathprintnumber{\XZ}\,\si{\centi \meter}$}
+    
+    \tkzMarkAngle[->, color=blue, size=1.5, draw, thick](Y,X,Z)
+    \tkzFindAngle(Y,X,Z)   \tkzGetAngle{delta}
+    \tkzLabelAngle[color=blue](Y,X,Z){$ \pgfmathprintnumber{\delta}\si{\degree}$}
+    
+    \tkzDrawSegment[color=blue](Y,Z)	\tkzLabelSegments[sloped, above=0.5ex, color=blue](Y,Z){$x$}
+    
+    \tkzDefMidPoint(X,Y) 	\tkzGetPoint{M}		\tkzDrawPoints[color=blue](M)	\tkzLabelPoints[above=1ex, color=blue](M)
+    \tkzDrawCircle[gray](M,X)
+\end{tikzpicture} 
+\end{document}
