@@ -18,8 +18,8 @@
     \useasboundingbox (-5,-1) rectangle (5,5);
     \tkzClipBB
     
-    \tkzDefPoint(-2,0){S} 	\tkzDrawPoints[color=blue](S)	\tkzLabelPoint[below left=1ex, color=blue](S){S} 
-    \tkzDefPoint(2,1){A}	  \tkzDrawPoints[color=blue](A)	\tkzLabelPoint[below left=1ex, color=blue](A){A}
+    \tkzDefPoint(-2,0){S} 	%\tkzDrawPoints[color=blue](S)	\tkzLabelPoint[below left=1ex, color=blue](S){S} 
+    \tkzDefPoint(2,1){A}	%\tkzDrawPoints[color=blue](A)	\tkzLabelPoint[below left=1ex, color=blue](A){A}
     \tkzCalcLength(S,A){r}  \tkzGetLength{r}
             
     \tkzDrawPoints[color=blue](S,A)  
