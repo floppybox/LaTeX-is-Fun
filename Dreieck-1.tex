@@ -6,6 +6,15 @@
 \usetikzlibrary{backgrounds}
 \usepackage{tkz-euclide}
 
+% schöne Pfeilspitzen
+\tikzset{%
+	>=latex,
+	inner sep=0pt,%
+	outer sep=0pt,%         Das ist auch der Abstand zwischen Messgeräten und Leitungen!!!
+	mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+		fill=black,circle}%
+}
+
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
 
