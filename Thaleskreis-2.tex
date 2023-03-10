@@ -5,6 +5,15 @@
 \usepackage{tikz}
 \usepackage{tkz-euclide}
 
+% schöne Pfeilspitzen
+\tikzset{%
+	>=latex,
+	inner sep=0pt,%
+	outer sep=0pt,%         Das ist auch der Abstand zwischen Messgeräten und Leitungen!!!
+	mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+		fill=black,circle}%
+}
+
 \usepackage{siunitx}				            % A comprehensive (SI) units package
 	\sisetup{output-decimal-marker = {,}}	% Komma als Dezimaltrennzeichen für siunitx
 	\sisetup{exponent-product = \cdot}		% Punkt statt x zwischen Zahl und Zehnerpotenz
