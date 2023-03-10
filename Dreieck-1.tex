@@ -9,14 +9,13 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
 
-
-\usepackage{siunitx}				        % A comprehensive (SI) units package
-	\sisetup{output-decimal-marker = {,}}	% Komma als Dezimaltrennzeichen für siunitx
-	\sisetup{exponent-product = \cdot}		% Punkt statt x zwischen Zahl und Zehnerpotenz
+\usepackage{siunitx}				        			% A comprehensive (SI) units package
+	\sisetup{output-decimal-marker = {,}}					% Komma als Dezimaltrennzeichen für siunitx
+	\sisetup{exponent-product = \cdot}					% Punkt statt x zwischen Zahl und Zehnerpotenz
 	\sisetup{per-mode = fraction, fraction-function=\tfrac}			% Bruchstrich in Einheit
 	\sisetup{inter-unit-product = \cdot}
 	\sisetup{detect-weight=true, detect-family=true} 
-	\sisetup{detect-all=true}             % für fettes SI - Quelle: https://tex.stackexchange.com/questions/610211/how-to-have-bold-unit-with-siunitx
+	\sisetup{detect-all=true}             					% für fettes SI - Quelle: https://tex.stackexchange.com/questions/610211/how-to-have-bold-unit-with-siunitx
 
 \begin{document}
 
@@ -44,7 +43,7 @@
 \draw node[anchor=west, xshift=0mm, yshift=0mm] at (B)  {B};
 \draw node[anchor=south, xshift=0mm, yshift=0mm] at (C)  {C};
 	
-\draw[color=black, line cap=round, line width=1pt] (A) -- (B) ;	
+\draw[color=black, line cap=round, line width=1pt] (A) -- (B);	
 \draw[color=black, line cap=round, line width=1pt] (B) -- (C);	
 \draw[color=black, line cap=round, line width=1pt] (C) -- (A);	
 
@@ -52,7 +51,7 @@
 \tkzMarkAngle[->, color=blue, size=1.5, draw, thick](C,B,A)
 \tkzMarkAngle[->, color=blue, size=1.5, draw, thick](A,C,B)
 
-\tkzLabelAngle[color=black, dist=1](B,A,C){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
+\tkzLabelAngle[color=black, dist=1.0](B,A,C){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
 \tkzLabelAngle[color=black, dist=0.9](C,B,A){$ \pgfmathprintnumber{\winkelbeta}\si{\degree}$}
 \tkzLabelAngle[color=black, dist=1.1](A,C,B){$ \pgfmathprintnumber{\winkelgamma}\si{\degree}$}
  
