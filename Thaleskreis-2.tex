@@ -46,7 +46,8 @@
     
     \tkzDrawSegment[color=blue](Y,Z)	\tkzLabelSegments[sloped, above=0.5ex, color=blue](Y,Z){$x$}
     
-    \tkzDefMidPoint(X,Y) 	\tkzGetPoint{M}		\tkzDrawPoints[color=blue](M)	\tkzLabelPoints[above=1ex, color=blue](M)
+    \tkzDefMidPoint(X,Y) 	
+    \tkzGetPoint{M}		\tkzDrawPoints[color=blue](M)	\tkzLabelPoint[above=1ex, color=blue](M){M}
     \tkzDrawCircle[gray](M,X)
 \end{tikzpicture} 
 \end{document}
