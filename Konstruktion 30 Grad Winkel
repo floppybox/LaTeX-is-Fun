@@ -24,39 +24,40 @@
 
 \begin{document}
 \begin{tikzpicture}%[show background grid]
-    \useasboundingbox (-5,-1) rectangle (5,5);
-    \tkzClipBB
+%	\useasboundingbox (-5,-1) rectangle (5,5);
+%	\tkzClipBB
     
-    \tkzDefPoint(-2,0){S} 	%\tkzDrawPoints[color=blue](S)	\tkzLabelPoint[below left=1ex, color=blue](S){S} 
-    \tkzDefPoint(2,1){A}	%\tkzDrawPoints[color=blue](A)	\tkzLabelPoint[below left=1ex, color=blue](A){A}
-    \tkzCalcLength(S,A){r}  \tkzGetLength{r}
-            
-    \tkzDrawPoints[color=blue](S,A)  
+\tkzDefPoint(-2,0){S} 	\tkzDrawPoints[color=blue](S)	% \tkzLabelPoint[below left=1ex, color=blue](S){S} 
+\tkzDefPoint(2,1){A}	\tkzDrawPoints[color=blue](A)	% \tkzLabelPoint[below left=1ex, color=blue](A){A}
 
-    \tkzDrawLines[add = 0.3 and 0.3, color=blue!100](S,A)
+% 	Berechnen der Streckenlänge SA
+\tkzCalcLength(S,A){r}  \tkzGetLength{r}
 
-    \tkzDrawArc[R,arc](S,1*\r)(5,90)	
-    \tkzDrawArc[R,arc](A,1*\r)(120,205)	
+\tkzDrawLines[add = 0.3 and 0.3, color=blue!100](S,A)
 
-    \tkzInterCC[R](S,\r)(A,\r)  \tkzGetFirstPoint{B_1}\tkzGetSecondPoint{B_2}
-    \tkzDrawPoints[color=blue](B_1)  
+\tkzDrawArc[R,arc](S,1*\r)(5,90)	
+\tkzDrawArc[R,arc](A,1*\r)(120,205)	
 
-    \tkzDrawLines[add = 0.3 and 0.3, color=blue!100](S,B_1)
-    \tkzMarkAngle[->, color=blue, size=1.5, draw,  thick](A,S,B_1)
-    \tkzFindAngle(A,S,B_1)      \tkzGetAngle{winkelalpha}
-    \tkzLabelAngle[color=blue](A,S,B_1){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
+\tkzInterCC[R](S,\r)(A,\r)  \tkzGetFirstPoint{B_1}\tkzGetSecondPoint{B_2}
+\tkzDrawPoints[color=blue](B_1)  
+
+\tkzDrawLines[add = 0.3 and 0.3, color=blue!100](S,B_1)
+\tkzMarkAngle[->, color=blue, size=1.5, draw,  thick](A,S,B_1)
+\tkzFindAngle(A,S,B_1)      \tkzGetAngle{winkelalpha}
+\tkzLabelAngle[color=blue](A,S,B_1){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
     
-    \tkzDefLine[bisector](A,S,B_1) \tkzGetPoint{a}%	\tkzDrawPoints[color=blue](a)	\tkzLabelPoints[below left=1ex, color=blue](a) 
-    \tkzShowLine[bisector,size=3,gap=5, thick, color=gray](A,S,B_1)
-    \tkzDrawLines[add=0 and 0.5,color=red!100](S,a)
+\tkzDefLine[bisector](A,S,B_1) \tkzGetPoint{a}%	\tkzDrawPoints[color=blue](a)	\tkzLabelPoints[below left=1ex, color=blue](a) 
+% 	Anzeigen der Konstruktionslinien für die Winkelhalbierende
+\tkzShowLine[bisector,size=3,gap=5, thick, color=gray](A,S,B_1)
+% 	Winkelhalbierende einzeichnen
+\tkzDrawLines[add=0 and 0.5,color=red!100](S,a)
 
-    \tkzFindAngle(A,S,a)        \tkzGetAngle{alphahalbe}
-    \tkzMarkAngle[->, color=magenta, size=2.6, draw,  thick](A,S,a)
-    \tkzLabelAngle[color=magenta, pos=2](A,S,a){$ \pgfmathprintnumber{\alphahalbe}\si{\degree}$}
+\tkzFindAngle(A,S,a)        \tkzGetAngle{alphahalbe}
+\tkzMarkAngle[->, color=magenta, size=2.6, draw,  thick](A,S,a)
+\tkzLabelAngle[color=magenta, pos=2](A,S,a){$ \pgfmathprintnumber{\alphahalbe}\si{\degree}$}
             
-    \tkzFindAngle(a,S,B_1)      \tkzGetAngle{alphahalbe}
-    \tkzMarkAngle[->, color=magenta, size=2.4, draw,  thick](a,S,B_1)
-    \tkzLabelAngle[color=magenta, pos=2](a,S,B_1){$ \pgfmathprintnumber{\alphahalbe}\si{\degree}$}
-
+\tkzFindAngle(a,S,B_1)      \tkzGetAngle{alphahalbe}
+\tkzMarkAngle[->, color=magenta, size=2.4, draw,  thick](a,S,B_1)
+\tkzLabelAngle[color=magenta, pos=2](a,S,B_1){$ \pgfmathprintnumber{\alphahalbe}\si{\degree}$}
 \end{tikzpicture}
 \end{document}
