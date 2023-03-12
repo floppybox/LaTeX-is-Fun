@@ -10,21 +10,12 @@
 \tikzset{%
 	>=latex,
 	inner sep=0pt,%
-	outer sep=0pt,%         Das ist auch der Abstand zwischen Messgeräten und Leitungen!!!
-	mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
-		fill=black,circle}%
+	outer sep=0pt,%
+	mark coordinate/.style={inner sep=0pt, outer sep=0pt, minimum size=3pt, fill=black,circle}%
 }
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
-
-\usepackage{siunitx}				        			% A comprehensive (SI) units package
-	\sisetup{output-decimal-marker = {,}}					% Komma als Dezimaltrennzeichen für siunitx
-	\sisetup{exponent-product = \cdot}					% Punkt statt x zwischen Zahl und Zehnerpotenz
-	\sisetup{per-mode = fraction, fraction-function=\tfrac}			% Bruchstrich in Einheit
-	\sisetup{inter-unit-product = \cdot}
-	\sisetup{detect-weight=true, detect-family=true} 
-	\sisetup{detect-all=true}             					% für fettes SI - Quelle: https://tex.stackexchange.com/questions/610211/how-to-have-bold-unit-with-siunitx
 
 \begin{document}
 
