@@ -1,0 +1,76 @@
+\documentclass[tikz,border=5mm]{standalone}
+
+\usepackage[sfdefault,lining]{FiraSans}
+\usepackage{siunitx}
+
+\usetikzlibrary{decorations.markings,decorations.pathmorphing,decorations.pathreplacing,arrows.meta}
+
+%Redefine font size
+\renewcommand{\scriptsize}{\fontsize{1.5mm}{2mm}\selectfont}
+
+%Starting angle
+\newcommand{\currentangle}{90}
+
+%Save and restore a position and an angle
+\newcommand{\storeLocation}[2]{coordinate(#1) \pgfextra{\pgfmathsetmacro\switchangle{\currentangle + #2} \expandafter\xdef\csname #1\endcsname{\switchangle}}}
+\newcommand{\getLocation}[1]{\pgfextra{\renewcommand{\currentangle}{\csname #1\endcsname}} (#1)}
+\newcommand{\getLocationInverted}[1]{\pgfextra{\renewcommand{\currentangle}{\csname #1\endcsname}\pgfmathsetmacro\currentangle{\currentangle + 180}} (#1)}
+
+%Commands to create new track
+\newcommand{\newTrack}[3][]{\renewcommand{\currentangle}{#2}\draw[line width=10pt,postaction=show track segments,#1] #3;}
+
+%Commands to create new curved track
+\newcommand{\curveL}[3]{arc (\currentangle-180:\currentangle - 180 + #2:#3) node[midway,sloped,white,font=\scriptsize]{#1} \pgfextra{\pgfmathsetmacro\currentangle{\currentangle + #2}}}
+\newcommand{\curveR}[3]{arc (\currentangle:\currentangle - #2:#3) node[midway,sloped,white,font=\scriptsize]{#1} \pgfextra{\pgfmathsetmacro\currentangle{\currentangle - #2}}}
+\newcommand{\newcurve}[4]{\expandafter\newcommand\csname #1L\endcsname{\curveL{#2}{#3}{#4}}\expandafter\newcommand\csname #1R\endcsname{\curveR{#2}{#3}{#4}}}
+
+%Define curves
+\newcurve{s}{}{30}{36}
+\newcurve{m}{}{30}{43.75}
+\newcurve{l}{}{30}{20}
+\newcurve{xl}{}{30}{57.93}
+\newcurve{xxl}{}{30}{64.36}
+\newcurve{wide}{}{12.1}{111.46}
+
+%Commands to create new straight track
+\newcommand{\newstraight}[3]{\expandafter\newcommand\csname #1\endcsname{-- ++(\currentangle - 90:#3) node[midway,sloped,white,font=\scriptsize]{#2}}}
+
+%Define straights
+\newstraight{single}{}{18}
+\newstraight{double}{}{36}
+
+
+%Define how tracks should appear
+\tikzset{
+    show track segments/.style={
+        decoration={
+            show path construction,
+            moveto code={},
+            lineto code={
+                \draw [-] (\tikzinputsegmentfirst) -- (\tikzinputsegmentlast);
+            },
+            curveto code={
+                \draw [-] (\tikzinputsegmentfirst) .. controls
+                (\tikzinputsegmentsupporta) and (\tikzinputsegmentsupportb)
+                ..(\tikzinputsegmentlast);
+            },
+            closepath code={
+                \draw [-] (\tikzinputsegmentfirst) -- (\tikzinputsegmentlast);
+            }
+        },decorate
+    }
+}
+
+% Start drawing the layout
+\begin{document}
+\begin{tikzpicture}[scale=0.05]
+
+% Layout
+% dank "postaction" können die Streifen im gleichen Befehl aufgemalt werden 
+\draw[line width=10,black!50!white
+, postaction = {draw, line width=1, white, dashed}
+, preaction ={draw, green!40!black, -, double = yellow!50, double distance = 1.3\pgflinewidth}
+] (0,0) \storeLocation{startpunkt}{0} \lL \lL \lL \single \lR \lR \lR \double \lR \lR \lR \single \xlR \xlR \xlR \double \lR \lR \wideR \single;
+
+\end{tikzpicture}
+\end{document}
