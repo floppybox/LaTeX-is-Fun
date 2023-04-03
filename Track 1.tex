@@ -68,9 +68,10 @@
 % Layout
 % dank "postaction" können die Streifen im gleichen Befehl aufgemalt werden 
 \draw[line width=10,black!50!white
-, postaction = {draw, line width=1, white, dashed}
 , preaction ={draw, green!40!black, -, double = yellow!50, double distance = 1.3\pgflinewidth}
-] (0,0) \storeLocation{startpunkt}{0} \lL \lL \lL \single \lR \lR \lR \double \lR \lR \lR \single \xlR \xlR \xlR \double \lR \lR \wideR \single;
+, postaction = {draw, line width=1, white, dashed}
+] 
+(0,0) \storeLocation{startpunkt}{0} \lL \lL \lL \single \lR \lR \lR \double \lR \lR \lR \single \xlR \xlR \xlR \double \lR \lR \wideR \single;
 
 \end{tikzpicture}
 \end{document}
