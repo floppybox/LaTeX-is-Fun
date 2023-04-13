@@ -3,6 +3,7 @@
 \usepackage[ngerman]{babel}
 
 \usepackage{tikz}
+\usepackage{siunitx}
 \usetikzlibrary{backgrounds}
 \usepackage{tkz-euclide}
 
@@ -23,9 +24,10 @@
 \begin{tikzpicture}[scale=1.0, show background grid]
 \pgfkeys{/pgf/number format/.cd, fixed zerofill, precision=1, use comma, 1000 sep={.}}
 
+% Definition der Punktkoordinaten
 \def\xA{0}
 \def\yA{0.5}
-\def\xB{4}
+\def\xB{4.5}
 \def\yB{1}
 \def\xC{2}
 \def\yC{5}
@@ -39,18 +41,20 @@
 \pgfmathsetmacro \winkelbeta{{atan(abs((((\yC-\yB)/(\xC-\xB) - (\yA-\yB)/(\xA-\xB)) / (1 + (\yC-\yB)/(\xC-\xB) * (\yA-\yB)/(\xA-\xB)))))}}
 \pgfmathsetmacro \winkelgamma{{atan(abs((((\yA-\yC)/(\xA-\xC) - (\yB-\yC)/(\xB-\xC)) / (1 + (\yA-\yC)/(\xA-\xC) * (\yB-\yC)/(\xB-\xC)))))}}
 
-\draw node[anchor=east, xshift=0mm, yshift=0mm] at (A)  {A};
-\draw node[anchor=west, xshift=0mm, yshift=0mm] at (B)  {B};
-\draw node[anchor=south, xshift=0mm, yshift=0mm] at (C)  {C};
-	
-\draw[color=black, line cap=round, line width=1pt] (A) -- (B);	
-\draw[color=black, line cap=round, line width=1pt] (B) -- (C);	
-\draw[color=black, line cap=round, line width=1pt] (C) -- (A);	
+% Bezeichnung der Eckpunkte
+\draw node[anchor=east, xshift=-1mm, yshift=0mm] at (A)  {A};
+\draw node[anchor=west, xshift=1mm, yshift=0mm] at (B)  {B};
+\draw node[anchor=south, xshift=0mm, yshift=1mm] at (C)  {C};
 
+% Einzeichnen des Dreicks
+\draw[color=black, line cap=round, line width=1pt] (A) -- (B) -- (C) -- cycle;	
+
+% Einzeichnen der Innenwinkel
 \tkzMarkAngle[->, color=blue, size=1.5, draw, thick](B,A,C)
 \tkzMarkAngle[->, color=blue, size=1.5, draw, thick](C,B,A)
 \tkzMarkAngle[->, color=blue, size=1.5, draw, thick](A,C,B)
 
+% Beschriften der Innenwinkel mit den berechneten Winkelmaßen 
 \tkzLabelAngle[color=black, dist=1.0](B,A,C){$ \pgfmathprintnumber{\winkelalpha}\si{\degree}$}
 \tkzLabelAngle[color=black, dist=0.9](C,B,A){$ \pgfmathprintnumber{\winkelbeta}\si{\degree}$}
 \tkzLabelAngle[color=black, dist=1.1](A,C,B){$ \pgfmathprintnumber{\winkelgamma}\si{\degree}$}
