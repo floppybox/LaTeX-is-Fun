@@ -1,0 +1,1014 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  17 APR 2023 20:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Konstruktion 30 Grad Winkel.tex"
+(./Konstruktion 30 Grad Winkel.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-29>
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count185
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count186
+\c@sapage=\count187
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common
+.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen139
+\pgfutil@tempdimb=\dimen140
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common
+-lists.tex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.
+def
+\pgfutil@abb=\box50
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.te
+x
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.
+tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.t
+ex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltere
+d.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen143
+\pgf@y=\dimen144
+\pgf@xa=\dimen145
+\pgf@ya=\dimen146
+\pgf@xb=\dimen147
+\pgf@yb=\dimen148
+\pgf@xc=\dimen149
+\pgf@yc=\dimen150
+\pgf@xd=\dimen151
+\pgf@yd=\dimen152
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count196
+\c@pgf@countb=\count197
+\c@pgf@countc=\count198
+\c@pgf@countd=\count199
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count266
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdfte
+x.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-commo
+n-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpa
+th.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count267
+\pgfsyssoftpath@bigbuffer@items=\count268
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotoc
+ol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.
+tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.te
+x
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.te
+x)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.
+tex
+\pgfmath@dimen=\dimen153
+\pgfmath@count=\count269
+\pgfmath@box=\box51
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.co
+de.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.ba
+sic.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.tr
+igonometric.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.ra
+ndom.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.co
+mparison.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.ba
+se.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.ro
+und.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.mi
+sc.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.in
+tegerarithmetics.code.tex)))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.t
+ex
+\c@pgfmathroundto@lastzeros=\count270
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints
+.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen154
+\pgf@picmaxx=\dimen155
+\pgf@picminy=\dimen156
+\pgf@picmaxy=\dimen157
+\pgf@pathminx=\dimen158
+\pgf@pathmaxx=\dimen159
+\pgf@pathminy=\dimen160
+\pgf@pathmaxy=\dimen161
+\pgf@xx=\dimen162
+\pgf@xy=\dimen163
+\pgf@yx=\dimen164
+\pgf@yy=\dimen165
+\pgf@zx=\dimen166
+\pgf@zy=\dimen167
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathco
+nstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen168
+\pgf@path@lasty=\dimen169
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathus
+age.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen170
+\pgf@shorten@start@additional=\dimen171
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes
+.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box52
+\pgf@hbox=\box53
+\pgf@layerbox@main=\box54
+\pgf@picture@serial@count=\count271
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphi
+cstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen172
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransf
+ormations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen173
+\pgf@pt@y=\dimen174
+\pgf@pt@temp=\dimen175
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.
+code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobject
+s.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathpr
+ocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows
+.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen176
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.
+code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen177
+\pgf@sys@shading@range@num=\count272
+\pgf@shadingcount=\count273
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.
+code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreextern
+al.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box55
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers
+.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransp
+arency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatter
+ns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.co
+de.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.
+code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box56
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.co
+de.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-vers
+ion-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen178
+\pgf@nodesepend=\dimen179
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-vers
+ion-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.t
+ex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.te
+x
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen180
+\pgffor@skip=\dimen181
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.
+code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplot
+handlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count274
+\pgfplotmarksize=\dimen182
+)
+\tikz@lastx=\dimen183
+\tikz@lasty=\dimen184
+\tikz@lastxsaved=\dimen185
+\tikz@lastysaved=\dimen186
+\tikz@lastmovetox=\dimen187
+\tikz@lastmovetoy=\dimen188
+\tikzleveldistance=\dimen189
+\tikzsiblingdistance=\dimen190
+\tikz@figbox=\box57
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
+\tikztreelevel=\count275
+\tikznumberofchildren=\count276
+\tikznumberofcurrentchild=\count277
+\tikz@fig@count=\count278
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.
+code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count279
+\pgfmatrixcurrentcolumn=\count280
+\pgf@matrix@numberofcolumns=\count281
+)
+\tikz@expandcount=\count282
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+\sa@box=\box61
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/04/30 3.74 The Babel package
+\babel@savecnt=\count283
+\U@D=\dimen191
+\l@unhyphenated=\language87
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count284
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthogra
+phy)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthogr
+aphy)
+Package babel Info: Making " an active character on input line 122.
+)))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
+2022/02/25 4.051b tkz-euclide.sty
+Package: tkz-euclide  2022/02/25 4.051b for pure Euclidean Geometry 
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarro
+ws.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen192
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarro
+ws.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen193
+\pgfarrowlength=\dimen194
+\pgfarrowwidth=\dimen195
+\pgfarrowlinewidth=\dimen196
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarydecorations.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorat
+ions.code.tex
+\pgfdecoratedcompleteddistance=\dimen197
+\pgfdecoratedremainingdistance=\dimen198
+\pgfdecoratedinputsegmentcompleteddistance=\dimen199
+\pgfdecoratedinputsegmentremainingdistance=\dimen256
+\pgf@decorate@distancetomove=\dimen257
+\pgf@decorate@repeatstate=\count285
+\pgfdecorationsegmentamplitude=\dimen258
+\pgfdecorationsegmentlength=\dimen259
+)
+\tikz@lib@dec@box=\box62
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarydecorations.markings.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pg
+flibrarydecorations.markings.code.tex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarydecorations.pathreplacing.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pg
+flibrarydecorations.pathreplacing.code.tex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarydecorations.shapes.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pg
+flibrarydecorations.shapes.code.tex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarydecorations.text.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pg
+flibrarydecorations.text.code.tex
+\pgf@lib@dec@text@box=\box63
+)
+\tikz@lib@dec@te@box=\box64
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarydecorations.pathmorphing.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pg
+flibrarydecorations.pathmorphing.code.tex))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryintersections.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryinte
+rsections.code.tex
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.
+code.tex)
+\pgf@intersect@solutions=\count286
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplot
+marks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibr
+aryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-04-29 L3 programming layer (loader) 
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count287
+\l__pdf_internal_box=\box65
+))
+Package: xfp 2022-01-12 L3 Floating point unit
+)
+\tkzRadius=\dimen260
+\tkzLength=\dimen261
+\tkz@radi=\dimen262
+\tkz@ax=\dimen263
+\tkz@ay=\dimen264
+\tkz@bx=\dimen265
+\tkz@by=\dimen266
+\tkz@cx=\dimen267
+\tkz@cy=\dimen268
+\tkz@dx=\dimen269
+\tkz@dy=\dimen270
+\tkz@cntmk=\count288
+
+Local configuration file tkz-euclide.cfg found and used
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.cfg
+2022/02/25 4.051b tkz-euclide.cfg
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-base.
+tex
+2022/02/25 4.051b tkz-tools-eu-base.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-utili
+ties.tex
+2022/02/25 4.051b tkz-tools-eu-utilities.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-BB.te
+x
+2022/02/25 4.051b tkz-obj-eu-BB.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-grids.t
+ex
+2022/02/25 4.051b tkz-obj-eu-grids.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-lib-eu-marks.t
+ex
+2022/02/25 4.051b tkz-lib-eu-marks.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-text.
+tex
+2022/02/25 4.051b tkz-tools-eu-text.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-lib-eu-shape.t
+ex
+2022/02/25 4.051b tkz-lib-eu-shape.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-axesmin
+.tex
+2022/02/25 4.051b tkz-obj-eu-axesmin
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-color
+s.tex
+2022/02/25 4.051b tkz-tools-eu-colors
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points.
+tex
+2022/02/25 4.051b tkz-obj-eu-points.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-math.
+tex
+2022/02/25 4.051b tkz-tools-eu-math.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-inter
+sections.tex
+2022/01/22 4.04 tkz-tools-intersections.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-angle
+s.tex
+2022/02/25 4.051b tkz-tools-angles.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-compass
+.tex
+2022/02/25 4.051b tkz-obj-eu-compass.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-circles
+.tex
+2022/02/25 4.051b tkz-obj-eu-circles.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-circles
+-by.tex
+2022/02/25 4.051b tkz-obj-eu-circles.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-draw-an
+gles.tex
+2022/02/25 4.051b tkz-tool-eu-angles.tex
+\tkz@arcsize=\dimen271
+\tkz@fillsize=\dimen272
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-draw-ci
+rcles.tex
+2022/02/25 4.051b tkz-obj-eu-draw-circles.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-draw-li
+nes.tex
+2022/02/25 4.051b tkz-obj-eu-draw-lines.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-draw-po
+lygons.tex
+2022/02/25 4.051b tkz-obj-eu-polygons.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-draw-tr
+iangles.tex
+2022/02/25 4.051b tkz-obj-eu-draw-triangles.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-lines.t
+ex
+2022/02/25 4.051b tkz-obj-eu-lines.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-
+by.tex
+2022/02/25 4.051b tkz-tools-el-points-by.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-
+rnd.tex
+2022/02/25 4.051b tkz-obj-el-points-rnd.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-
+spc.tex
+2022/02/25 4.051b tkz-obj-el-points.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-
+with.tex
+2022/02/25 4.051b tkz-obj-el-points-with.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-polygon
+s.tex
+2022/02/25 4.051b tkz-obj-eu-polygons.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-protrac
+tor.tex
+2022/02/25 4.051b tkz-obj-eu-protractor.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-sectors
+.tex
+2022/02/25 4.051b tkz-obj-eu-sectors.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-show.te
+x
+2022/02/25 4.051b tkz-obj-eu-show.tex
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-triangl
+es.tex
+2022/02/25 4.051b tkz-obj-eu-triangles.tex
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2022-04-25 v3.1.0 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen273
+\l__siunitx_angle_marker_box=\box66
+\l__siunitx_angle_unit_box=\box67
+\l__siunitx_compound_count_int=\count289
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_number_exponent_fixed_int=\count291
+\l__siunitx_number_min_decimal_int=\count292
+\l__siunitx_number_min_integer_int=\count293
+\l__siunitx_number_round_precision_int=\count294
+\l__siunitx_number_group_first_int=\count295
+\l__siunitx_number_group_size_int=\count296
+\l__siunitx_number_group_minimum_int=\count297
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen274
+))
+\l__siunitx_table_tmp_box=\box68
+\l__siunitx_table_tmp_dim=\dimen275
+\l__siunitx_table_column_width_dim=\dimen276
+\l__siunitx_table_integer_box=\box69
+\l__siunitx_table_decimal_box=\box70
+\l__siunitx_table_before_box=\box71
+\l__siunitx_table_after_box=\box72
+\l__siunitx_table_before_dim=\dimen277
+\l__siunitx_table_carry_dim=\dimen278
+\l__siunitx_unit_tmp_int=\count298
+\l__siunitx_unit_position_int=\count299
+\l__siunitx_unit_total_int=\count300
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.s
+ty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen279
+\ar@mcellbox=\box73
+\extrarowheight=\dimen280
+\NC@list=\toks33
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box74
+))
+
+Package siunitx Info: Option "fraction-function" has been deprecated in this
+(siunitx)             release.
+(siunitx)             
+(siunitx)             Use "fraction-command = \tfrac " as a replacement.
+
+
+Package siunitx Info: Option "detect-weight" has been deprecated in this
+(siunitx)             release.
+(siunitx)             
+(siunitx)             Use "reset-text-series = false, text-series-to-math =
+(siunitx)             true" as a replacement.
+
+
+Package siunitx Info: Option "detect-family" has been deprecated in this
+(siunitx)             release.
+(siunitx)             
+(siunitx)             Use "reset-text-family = false, text-family-to-math =
+(siunitx)             true" as a replacement.
+
+
+Package siunitx Info: Option "detect-all" has been deprecated in this release.
+(siunitx)             
+(siunitx)             Use "mode = match, propagate-math-font = true,
+(siunitx)             reset-math-version = false, reset-text-family = false,
+(siunitx)             reset-text-series = false, reset-text-shape = false,
+(siunitx)             text-family-to-math = true, text-series-to-math = true"
+(siunitx)             as a replacement.
+
+
+No file "Konstruktion 30 Grad Winkel".aux.
+\openout1 = `"Konstruktion 30 Grad Winkel.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen281
+\scratchbox=\box75
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen282
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks35
+)
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-dist/tex/latex/translations/translations-basi
+c-dictionary-german.trsl
+File: translations-basic-dictionary-german.trsl (german translation file `trans
+lations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `german'. on input line 25.
+
+Missing character: There is no r in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 47.
+[1
+
+{/private/var/mobile/Containers/Data/Application/B63EE7FB-C576-486D-A6DA-2D95EF
+073F1C/Library/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./Konstruktion 30 Grad Winkel.aux) ) 
+Here is how much of TeX's memory you used:
+ 22939 strings out of 478305
+ 574608 string characters out of 5804337
+ 780792 words of memory out of 5000000
+ 40674 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 115i,7n,118p,441b,1211s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</private/var/mobile/Containers/Data/Appli
+cation/B63EE7FB-C576-486D-A6DA-2D95EF073F1C/Library/texlive/2022/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></private/var/mobile/Containers/Data/Appl
+ication/B63EE7FB-C576-486D-A6DA-2D95EF073F1C/Library/texlive/2022/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "Konstruktion 30 Grad Winkel.pdf" (1 page, 19722 bytes).
+PDF statistics:
+ 21 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+
