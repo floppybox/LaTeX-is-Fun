@@ -1,0 +1,68 @@
+\documentclass[border=10pt, tikz]{standalone}
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel}
+
+\usepackage{wasysym}   						% Electrical and physical symbols \AC \HF \VHF \photon \gluon
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usepackage[american, europeanresistors,americanvoltages,emptydiodes,siunitx]{circuitikz}
+
+\usetikzlibrary{circuits.ee.IEC}
+
+
+\begin{document}
+
+\ctikzset{bipoles/length=1cm}
+\begin{tikzpicture}[circuit ee IEC, font=\sffamily\footnotesize]
+    \draw[fill=white] (0,2) circle (2.5pt);
+    \draw (0,2) to [stroke diode, /tikz/circuitikz/bipoles/length=10mm] (4,2);
+    \draw (4,2) to [resistor] (4,0);
+    \draw (4,0) -- (0,0);
+    \draw[fill=white] (0,0) circle (2.5pt);
+    \draw (0,1) node   {\large\AC} -- (0,1) node {};
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale = 1, samples = 100]
+
+    %% Größe des KOSYs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \pgfmathsetmacro{\xmin}{0}
+    \pgfmathsetmacro{\xmax}{15}
+    \pgfmathsetmacro{\ymin}{-1}
+    \pgfmathsetmacro{\ymax}{1}
+    
+    %% Definieren der Variablen für Gitter und KOSY %%%%%%%%%%%%%
+    
+    \pgfmathsetmacro{\xmingrid}{\xmin-1.5}
+    \pgfmathsetmacro{\xmaxgrid}{\xmax+2.5}
+    \pgfmathsetmacro{\ymingrid}{\ymin-1}
+    \pgfmathsetmacro{\ymaxgrid}{\ymax+1.5}
+    
+    \pgfmathsetmacro{\xminkosy}{\xmin-0.5}
+    \pgfmathsetmacro{\xmaxkosy}{\xmax+0.5}
+    \pgfmathsetmacro{\yminkosy}{\ymin-0.5}
+    \pgfmathsetmacro{\ymaxkosy}{\ymax+0.5}
+    
+    % Zeichnen des Gitters als Hilfslinien im Hintergrund
+    
+    \tikzstyle{dotted}= [dash pattern=on 0.1mm off 0.5mm]
+    \draw[help lines,line width=0.15mm,step=0.5,style=dotted,black!80,line cap=round] (\xmingrid,\ymingrid) grid (\xmaxgrid,\ymaxgrid);
+    
+    % Koordinatenachsen mit Beschriftung
+    
+    \draw[-latex,line width = 0.2mm] (\xminkosy,0) --(\xmaxkosy,0) node[right]{$t$ in \si{\second}};   
+    \draw[-latex,line width = 0.2mm] (0,\yminkosy) --(0,\ymaxkosy) node[above, yshift = 0.5ex]{$U$ in \si{\volt}};	
+    
+    % Einzeichnen der Punkte / Funktionsgraphen
+    
+    \draw[line width=1pt,domain=0*pi:1*pi, line cap=round, color = magenta] plot (\x,{sin(\x r)});
+    \draw[line width=1pt,domain=1*pi:2*pi, line cap=round, color = gray, densely dashed] plot (\x,{sin(\x r)});
+    \draw[line width=1pt,domain=1*pi:2*pi, line cap=round, color = magenta] plot (\x,0);
+    \draw[line width=1pt,domain=2*pi:3*pi, line cap=round, color = magenta] plot (\x,{sin(\x r)});
+    \draw[line width=1pt,domain=3*pi:4*pi, line cap=round, color = gray, densely dashed] plot (\x,{sin(\x r)});
+    \draw[line width=1pt,domain=3*pi:4*pi, line cap=round, color = magenta] plot (\x,0);
+    \draw[line width=1pt,domain=4*pi:15.25, line cap=round, color = magenta] plot (\x,{sin(\x r)});
+    
+\end{tikzpicture}
+\end{document}
