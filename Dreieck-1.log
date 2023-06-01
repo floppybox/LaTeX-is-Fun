@@ -1,0 +1,16 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdftex 2023.5.5)  1 JUN 2023 22:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Dreieck-1.tex
+(./Dreieck-1.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  [border=10pt, tikz]{standalone}
+? 
+! Emergency stop.
+l.1 
+    
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
