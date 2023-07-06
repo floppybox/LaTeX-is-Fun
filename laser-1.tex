@@ -1,0 +1,105 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{siunitx}
+\usetikzlibrary{backgrounds}
+\usepackage{tkz-euclide}
+
+% schöne Pfeilspitzen
+\tikzset{%
+	>=latex,
+	inner sep=0pt,%
+	outer sep=0pt,%
+	mark coordinate/.style={inner sep=0pt, outer sep=0pt, minimum size=3pt, fill=black,circle}%
+}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\makeatletter% from https://tex.stackexchange.com/a/39698/121799
+\def\grd@save@target#1{%
+	\def\grd@target{#1}}
+\def\grd@save@start#1{%
+	\def\grd@start{#1}}
+\tikzset{
+	labeled grid/.style={
+		to path={%
+			\pgfextra{%
+				\edef\grd@@target{(\tikztotarget)}%
+				\tikz@scan@one@point\grd@save@target\grd@@target\relax
+				\edef\grd@@start{(\tikztostart)}%
+				\tikz@scan@one@point\grd@save@start\grd@@start\relax
+				\draw[minor help lines] (\tikztostart) grid (\tikztotarget);
+				\draw[major help lines] (\tikztostart) grid (\tikztotarget);
+				\grd@start
+				\pgfmathsetmacro{\grd@xa}{\the\pgf@x/1cm}
+				\pgfmathsetmacro{\grd@ya}{\the\pgf@y/1cm}
+				\grd@target
+				\pgfmathsetmacro{\grd@xb}{\the\pgf@x/1cm}
+				\pgfmathsetmacro{\grd@yb}{\the\pgf@y/1cm}
+				\pgfmathsetmacro{\grd@xc}{\grd@xa + \pgfkeysvalueof{/tikz/grid with coordinates/major step}}
+				\pgfmathsetmacro{\grd@yc}{\grd@ya + \pgfkeysvalueof{/tikz/grid with coordinates/major step}}
+				%\foreach \x in {\grd@xa,\grd@xc,...,\grd@xb}
+				%\node[anchor=north] at (\x,\grd@ya) {\pgfmathprintnumber{\x}};
+				%\foreach \y in {\grd@ya,\grd@yc,...,\grd@yb}
+				%\node[anchor=east] at (\grd@xa,\y) {\pgfmathprintnumber{\y}};
+				\path foreach \x in {\grd@xa,\grd@xc,...,\grd@xb}
+				{foreach \y in {\grd@ya,\grd@yc,...,\grd@yb}
+					{ (\x,\y) node[grid with coordinates/grid label] {$(\pgfmathprintnumber{\x},\pgfmathprintnumber{\y})$}}};
+			}
+		}
+	},
+	minor help lines/.style={
+		help lines,
+		step=\pgfkeysvalueof{/tikz/grid with coordinates/minor step},
+		draw=none
+	},
+	major help lines/.style={
+		help lines,
+		line width=\pgfkeysvalueof{/tikz/grid with coordinates/major line width},
+		step=\pgfkeysvalueof{/tikz/grid with coordinates/major step},
+		draw=none
+	},
+	grid with coordinates/.cd,
+	minor step/.initial=.2,
+	major step/.initial=1,
+	major line width/.initial=0pt,
+	grid label/.style={below,scale=0.5,color = black!40}
+}
+\makeatother
+
+\begin{document}
+	
+	\tikzstyle{background grid}=[draw, black!20,step=5mm,line width=1pt]
+	\begin{tikzpicture}[scale=1.0, 
+%       show background grid, 
+                        ]
+%		\draw (-1,-1) to[labeled grid] (10,10);   % auskommentieren 
+		
+		\draw   (0,0)   [.-, line width = 2pt, line cap=round] to
+		(12,0);
+		\draw   (0,0)   [.->, line width = 2pt, line cap=round] to
+		(0,6);
+		
+		\draw   (0,2)   [-, line width = 2pt, line cap = butt, loosely dotted, color = blue] to
+		(6,2);
+		\node   at (-0.5,2) [color = blue] {\huge{$\mathbf{E_0}$}};
+		\draw   (0,4)   [-, line width = 2pt, loosely dotted, color = green!50!black] to
+		(6,4);
+		\node   at (-0.5,4) [color = green!50!black] {\huge{$\mathbf{E_1}$}};
+
+        \node   [circle, shading = ball, minimum width = 8mm] (ball) at (5,2) {};
+%		\draw   (5,2)   [blue, fill = blue, line width = 2pt] circle (4mm);
+		\draw   (5,2.5) [arrows={-Triangle[length = 4mm, width = 4mm]}, color = magenta, line width = 5pt] to (5,3.5);
+		\draw   (5,4)	[green!50!black, line width = 3pt] circle (4mm);
+        \node   [circle, shading = ball, minimum width = 8mm] (ball) at (5,4) {};
+
+        \draw[ draw = red, very thick, decorate, decoration={snake, segment length=3mm, amplitude=2mm, pre length = 0pt, post length =7pt}, ->]  (2,2) -- (4.5,2);
+ 
+ \end{tikzpicture}
+	
+\end{document}
+
